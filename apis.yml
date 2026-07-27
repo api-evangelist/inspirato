@@ -1,7 +1,15 @@
 aid: inspirato
 name: Inspirato
-description: 'Inspirato is a company surfaced as a portfolio company of ivp and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Inspirato is a luxury travel subscription company that gives members access to
+  a curated portfolio of 300+ private branded residences, 200+ five-star hotels,
+  and 170+ destinations worldwide, paired with dedicated concierge care, curated
+  experiences, and signature hotel partnerships. Members book vacations through
+  Inspirato's website and app with predictable, service-first delivery. It was
+  surfaced as a portfolio company of IVP and added to the API Evangelist network.
+  Inspirato does not currently publish a public developer API, developer portal,
+  or machine-readable API artifacts; this profile captures its public web identity
+  and domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/inspirato/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +17,30 @@ x-backed-by:
 - ivp
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://www.inspirato.com/favicon.ico
 tags:
 - Company
 - Consumer
+- Travel
+- Hospitality
+- Luxury
+- Subscription
+- Membership
+- Concierge
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/inspirato-domain-security.yml
 - type: Website
   url: https://www.inspirato.com
+- type: Blog
+  url: https://www.inspirato.com/details/
+- type: SignUp
+  url: https://www.inspirato.com/get-started/
+- type: Login
+  url: https://www.inspirato.com/signin
+- type: Support
+  url: https://www.inspirato.com/contact-us
+- type: PrivacyPolicy
+  url: https://www.inspirato.com/legal-pages/privacy-policy/
+- type: TermsOfService
+  url: https://www.inspirato.com/legal-pages/terms-of-use/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
